@@ -9,4 +9,73 @@ body {
   padding: 0;
 }
 
+:root {
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --space-128: 128px;
+
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-xxl: 2rem;
+
+  --color-green: hsl(160deg, 100%, 30%);
+  --color-gold-lighter: hsl(45deg, 100%, 50%);
+  --color-gold-darker: hsl(45deg, 100%, 40%);
+  --color-gray-black: hsl(0deg, 0%, 0%);
+  --color-gray-very-dark: hsl(0deg, 0%, 10%);
+  --color-gray-dark: hsl(0deg, 0%, 30%);
+  --color-gray-medium: hsl(0deg, 0%, 40%);
+  --color-gray-light: hsl(0deg, 0%, 60%);
+  --color-gray-white: hsl(0deg, 0%, 100%);
+}
+
 /* Add styles here! */
+
+header {
+  padding: var(--space-64) 0;
+  border-bottom: var(--space-8) solid var(--color-gray-dark);
+}
+
+main {
+  padding: var(--space-64) 0;
+  background-color: var(--color-gray-light);
+}
+
+strong {
+  color: var(--color-green);
+}
+
+.max-width-wrapper {
+  max-width: 768px;
+  margin: auto;
+}
+
+.intro-chunk {
+  padding: var(--space-16);
+  max-width: 360px;
+  font-size: var(--font-size-l);
+}
+
+.title {
+  margin-bottom: var(--space-32);
+}
+
+.card {
+  padding: var(--space-8) var(--space-16) 0;
+  background-color: var(--color-gray-white);
+  border-bottom: var(--space-8) solid var(--color-gray-dark);
+}
+
+.indented-heading {
+  width: fit-content;
+  padding: var(--space-16) var(--space-24);
+  margin-top: -2px;
+  margin-left: calc(-1 * var(--space-24));
+  background-color: var(--color-gold-lighter);
+  border-bottom: var(--space-8) solid var(--color-gold-darker);
+}
